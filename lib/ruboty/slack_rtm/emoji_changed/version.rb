@@ -1,5 +1,5 @@
 module Ruboty
-  module SlackRtm
+  module SlackRTM
     module EmojiChanged
       VERSION = "0.1.0"
     end

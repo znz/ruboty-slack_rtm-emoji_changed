@@ -1,8 +1,6 @@
-# Ruboty::SlackRtm::EmojiChanged
+# Ruboty::SlackRTM::EmojiChanged
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/ruboty/slack_rtm/emoji_changed`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Notify when [emoji_changed](https://api.slack.com/events/emoji_changed) with [ruboty-slack_rtm](https://rubygems.org/gems/ruboty-slack_rtm).
 
 ## Installation
 
@@ -22,7 +20,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+- Create `#emoji` or set `SLACK_EMOJI_CHANGED_CHANNEL=#emoji_channel` to env.
+
+- Add emoji
+- Add alias of emoji
+- Remove emojis
+
+### Do not notify when removed
+
+- Set `SLACK_EMOJI_IGNORE_REMOVED=1` to env.
+
+If you want to be compatible with [emoy_webhook](https://github.com/sue445/emoy_webhook).
 
 ## Development
 
@@ -32,5 +40,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/ruboty-slack_rtm-emoji_changed.
-
+Bug reports and pull requests are welcome on GitHub at https://github.com/znz/ruboty-slack_rtm-emoji_changed.
